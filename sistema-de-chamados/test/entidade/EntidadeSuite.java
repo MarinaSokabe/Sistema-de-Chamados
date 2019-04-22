@@ -18,7 +18,7 @@ import org.junit.runners.Suite;
  * @author 31704786
  */
 @RunWith(Suite.class)
-@Suite.SuiteClasses({RegistroChamadoTest.class, TecnicoTest.class, PersistenciaSuite.class, SistemaOperacionalTest.class, BancoDeDadosTest.class, EmpresaTest.class, TipoProblemaTest.class, ChamadoTest.class, TipoConexaoTest.class, PessoaTest.class, StatusTest.class, SistemaChamadosMainTest.class, ClienteEmpresaTest.class})
+@Suite.SuiteClasses({RegistroChamadoTest.class, TecnicoTest.class, PersistenciaSuite.class, SistemaOperacionalTest.class, BancoDeDadosTest.class, EmpresaTest.class, TipoProblemaTest.class, ChamadoTest.class, TipoConexaoTest.class, PessoaTest.class, StatusTest.class, ClienteEmpresaTest.class})
 public class EntidadeSuite {
 
     @BeforeClass
