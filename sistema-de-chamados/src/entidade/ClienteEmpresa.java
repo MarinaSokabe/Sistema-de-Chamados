@@ -34,6 +34,7 @@ public class ClienteEmpresa extends Pessoa implements Serializable {
     }
 
     public long getCpf() {
+      
         return cpf;
     }
 
