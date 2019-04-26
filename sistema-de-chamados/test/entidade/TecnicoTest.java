@@ -21,34 +21,35 @@ public class TecnicoTest {
     public TecnicoTest() {
     }
     
-    @BeforeClass
-    public static void setUpClass() {
-    }
+    //@BeforeClass
+    //public static void setUpClass() {
+    //}
     
-    @AfterClass
-    public static void tearDownClass() {
-    }
+    //@AfterClass
+    //public static void tearDownClass() {
+    //}
     
-    @Before
-    public void setUp() {
-    }
+   // @Before
+   // public void setUp() {
+    //}
     
-    @After
-    public void tearDown() {
-    }
+    //@After
+   // public void tearDown() {
+   // }
 
-    /**
-     * Test of toString method, of class Tecnico.
-     */
     @Test
-    public void testToString() {
-        System.out.println("toString");
-        Tecnico instance = null;
-        String expResult = "";
-        String result = instance.toString();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
+    public void criarTecnicoTest(){
+       Tecnico t = new Tecnico("fabio", 75589);
+       assertEquals("fabio", t.toString());
+       assertEquals(75589,t.getTelefone());
+    } 
+    
+    @Test
+    public void criarTecniconegativaTest(){
+      Tecnico t = new Tecnico("fabio", -75589);
+       assertEquals("fabio", t.toString());
+       assertTrue(t.getTelefone()> 0);
+    } 
+ 
     
 }

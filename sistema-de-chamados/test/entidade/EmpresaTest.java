@@ -16,93 +16,37 @@ import static org.junit.Assert.*;
  *
  * @author 31704786
  */
+
+  
 public class EmpresaTest {
     
     public EmpresaTest() {
     }
     
-    @BeforeClass
-    public static void setUpClass() {
-    }
+    //@BeforeClass
+    //public static void setUpClass() {
+    //}
     
-    @AfterClass
-    public static void tearDownClass() {
-    }
+   // @AfterClass
+    //public static void tearDownClass() {
+    //}
     
-    @Before
-    public void setUp() {
-    }
+    //@Before
+    //public void setUp() {
+    //}
     
-    @After
-    public void tearDown() {
-    }
-
-    /**
-     * Test of getNumeroContrato method, of class Empresa.
-     */
+    //@After
+    //public void tearDown() {
+  //  }
+  
+    
     @Test
-    public void testGetNumeroContrato() {
-        System.out.println("getNumeroContrato");
-        Empresa instance = null;
-        long expResult = 0L;
-        long result = instance.getNumeroContrato();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of setNumeroContrato method, of class Empresa.
-     */
-    @Test
-    public void testSetNumeroContrato() {
-        System.out.println("setNumeroContrato");
-        long numeroContrato = 0L;
-        Empresa instance = null;
-        instance.setNumeroContrato(numeroContrato);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of getNomeEmpresa method, of class Empresa.
-     */
-    @Test
-    public void testGetNomeEmpresa() {
-        System.out.println("getNomeEmpresa");
-        Empresa instance = null;
-        String expResult = "";
-        String result = instance.getNomeEmpresa();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of setNomeEmpresa method, of class Empresa.
-     */
-    @Test
-    public void testSetNomeEmpresa() {
-        System.out.println("setNomeEmpresa");
-        String nomeEmpresa = "";
-        Empresa instance = null;
-        instance.setNomeEmpresa(nomeEmpresa);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of toString method, of class Empresa.
-     */
-    @Test
-    public void testToString() {
-        System.out.println("toString");
-        Empresa instance = null;
-        String expResult = "";
-        String result = instance.toString();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
+    public void criarEmpresaTest(){
+       Empresa e = new Empresa(123, "deslizar de bariga");
+       assertEquals(123, e.getNumeroContrato());
+       assertEquals("deslizar de bariga", e.getNomeEmpresa());
+    } 
+     
+    
     
 }
